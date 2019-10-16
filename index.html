@@ -13,16 +13,28 @@
         <link href="https://fonts.googleapis.com/css?family=Lato" rel=
         "stylesheet">
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css">
-</head>
+<style>
+      .mejs__overlay-button {
+      	background-image: url("img/mejs-controls.svg");
+      }
+      .mejs__overlay-loading-bg-img {
+      	background-image: url("img/mejs-controls.svg");
+      }
+      .mejs__button > button {
+      	background-image: url("img/mejs-controls.svg");
+      }
+    </style>
 
-<body>
-        <div class="videocontainer">
-                <video class="mejs__player" id="video" style=
-                "max-width:100%"><source src="video/video.mp4" type=
-                "video/mp4"> <source src="video/video.ogg" type=
-                "video/ogg"></video>
-        </div>
+   </head>
 
+    <body>
+         <div class="videocontainer">
+    <video id="video" width="640" height="350"  preload="auto">
+      <source src="video/video.ogg" type="video/ogg">
+      <source src="video/video.mp4" type="video/mp4">
+    </video>
+    </div>
+    
 
         <div id="transcript">
                 <p><span data-end="4.130" data-start="0.240">Now that we've
